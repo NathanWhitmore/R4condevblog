@@ -1,6 +1,5 @@
-# R for conservation and development projects
+### R for conservation and development projects
 
-## Something
 Realising that there wasn't a good R resource for conservation and development practitioners I wrote **R for Conservation and Development Projects: A Primer for Practitioners** which came out in 2021.
 
 ![book cover](https://raw.githubusercontent.com/NathanWhitmore/Reproducible/main/book%20cover.jpg)
