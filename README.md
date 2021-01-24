@@ -8,9 +8,9 @@ I have an avid interest in the R statistical programming language. Realising tha
 
 The book is available at all major book distributors (including kindle, ebook, paper back, and hardback) including:
 
-- ![The Book Depository](https://www.bookdepository.com/R-for-Conservation-Development-Projects-Nathan-Whitmore/9780367205485?ref=grid-view&qid=1611283102040&sr=1-1)
-- ![Amazon](https://www.amazon.com/Conservation-Development-Projects-Chapman-Hall/dp/0367205483)
-- ![Booktopia](https://www.booktopia.com.au/r-for-conservation-and-development-projects-nathan-whitmore/book/9780367205485.html)
+- [The Book Depository](https://www.bookdepository.com/R-for-Conservation-Development-Projects-Nathan-Whitmore/9780367205485?ref=grid-view&qid=1611283102040&sr=1-1)
+- [Amazon](https://www.amazon.com/Conservation-Development-Projects-Chapman-Hall/dp/0367205483)
+- [Booktopia](https://www.booktopia.com.au/r-for-conservation-and-development-projects-nathan-whitmore/book/9780367205485.html)
 
 
 ### Support or Contact
