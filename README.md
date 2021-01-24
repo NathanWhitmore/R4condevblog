@@ -5,7 +5,7 @@ You can use the [editor on GitHub](https://github.com/NathanWhitmore/Reproducibl
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 
-![book cover]{https://raw.githubusercontent.com/NathanWhitmore/Reproducible/main/book%20cover.jpg}
+![book cover]{https://images.routledge.com/common/jackets/amazon/978036720/9780367205485.jpg}
 
 ### Markdown
 
