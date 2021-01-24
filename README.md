@@ -1,4 +1,3 @@
-### Why R for Conservation and Development?
 Realising that there wasn't a good R resource for conservation and development practitioners I wrote **R for Conservation and Development Projects: A Primer for Practitioners** which came out in 2021.
 
 ![book cover](https://raw.githubusercontent.com/NathanWhitmore/Reproducible/main/book%20cover.jpg)
@@ -14,7 +13,7 @@ Additionally, I am working on a free bookdown (online) version which will be pub
 ### About the book
 This book is aimed at conservation and development practitioners who need to learn and use R in a part-time professional context. It gives people with a non-technical background a set of skills to graph, map, and model in R. It also provides background on data integration in project management and covers fundamental statistical concepts. The book aims to demystify R and give practitioners the confidence to use it.
 
-Key Features:
+**Key Features:**
 
 * Viewing data science as part of a greater knowledge and decision making system
 * Foundation sections on inference, evidence, and data integration
