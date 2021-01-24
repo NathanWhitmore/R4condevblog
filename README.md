@@ -1,3 +1,4 @@
+# Welcome
 Hi, my name is Nathan Whitmore, and I’m a conservation scientist and practitioner. Over the years I have worked variously as a fisheries observer, conservation ranger, and, from 2012 to 2018, as an in-country adviser for the Wildlife Conservation Society’s Papua New Guinea programme. I am currently based in New Zealand.
 
 ### R for Conservation and Development
@@ -10,6 +11,8 @@ The book is available at all major book distributors (kindle, ebook, paper back,
 - [The Book Depository](https://www.bookdepository.com/R-for-Conservation-Development-Projects-Nathan-Whitmore/9780367205485?ref=grid-view&qid=1611283102040&sr=1-1)
 - [Amazon](https://www.amazon.com/Conservation-Development-Projects-Chapman-Hall/dp/0367205483)
 - [Booktopia](https://www.booktopia.com.au/r-for-conservation-and-development-projects-nathan-whitmore/book/9780367205485.html)
+
+Additionally, I am working on a free bookdown (online) version which will be publicly available in early 2021.
 
 ### Science
 My professional interests include data science, evidence-based decision making, sustainable use of wildlife, and traditional natural resource management.
