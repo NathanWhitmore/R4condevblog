@@ -4,7 +4,7 @@
 
 ### How to download
 First install the "remotes" package via:
-```
+```r
 install.packages("remotes")
 ```
 
