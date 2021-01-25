@@ -2,6 +2,6 @@
 
 ### index
 
-[about](about.md)
-[book](book.md)
+* [about](about.md)
+* [book](book.md)
 
