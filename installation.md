@@ -28,4 +28,4 @@ To bring a data set (e.g. 'demo1') into the R environment use:
 ```r
 data(demo1)
 ```
-[BACK to INDEX](index.md) X
+[BACK to INDEX](index.md)
