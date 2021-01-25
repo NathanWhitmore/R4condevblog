@@ -5,4 +5,4 @@ Most of my scientific publications are viewable at [here](https://www.researchga
 ### Support or Contact
 If you want to get in touch email me at: <nathan@reproducible.co.nz>
 
-[BACK TO INDEX](index.md)
+[BACK to INDEX](index.md)
