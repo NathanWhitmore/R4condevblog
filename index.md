@@ -2,6 +2,6 @@
 
 * [about me](about.md)
 * [about the book](book.md)
-* [installing the data for the examples](installation.md)
+* [installing the "condev" data](installation.md)
 * useful R code
 * understanding strategy
