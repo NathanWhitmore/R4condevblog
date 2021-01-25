@@ -1,7 +1,8 @@
-# R for conservation and development
+### Site map
 
-### index
+* [about me](about.md)
+* [about the book](book.md)
 
-* [about](about.md)
-* [book](book.md)
+### Useful R code
 
+### Understanding strategy
