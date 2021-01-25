@@ -10,7 +10,7 @@ The book is available at all major book distributors (kindle, ebook, paper back,
 - [Amazon](https://www.amazon.com/Conservation-Development-Projects-Chapman-Hall/dp/0367205483)
 - [Booktopia](https://www.booktopia.com.au/r-for-conservation-and-development-projects-nathan-whitmore/book/9780367205485.html)
 
-Additionally, I am working on a free bookdown (online) version which should be publicly available in the first few months of 2021.
+Additionally, I am working on a free bookdown (online) version which should be publicly available in the first months of 2021.
 
 ### About the book
 This book is aimed at conservation and development practitioners who need to learn and use R in a part-time professional context. It gives people with a non-technical background a set of skills to graph, map, and model in R. It also provides background on data integration in project management and covers fundamental statistical concepts. The book aims to demystify R and give practitioners the confidence to use it.
