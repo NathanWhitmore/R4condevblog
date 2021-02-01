@@ -1,8 +1,8 @@
-## Calculating time lags
+### Calculating time lags
 
 The other day I was asked to calculate the time difference (median, minimum and maximum) between monitoring sessions within study sites for a large data set. Although this might seem daunting, it is a problem that is very easy to handle in the `tidyverse` package.
  
-## Making the mock data
+### Making the mock data
 
 We will begin by using the packages `tidyverse` (for data wrangling)
 ```r
@@ -65,7 +65,7 @@ And make a data frame from these:
 df <- data.frame(village, my.timestamp)
 ```
 
-## Undertaking the analysis
+### Undertaking the analysis
 
 From here we first need to group the data by village using **group_by** then arrange the sessions by date. This ensures that time difference is only calculated between sequential dates. Thereafter we make a new column of the difference between times (`diff`) using the **difftime()** function with the **lag()** function  -- the **lag()** function ensures the difference is calculated from the value which follows (rather than leads).
 ```r
