@@ -53,16 +53,16 @@ And make a data frame from these:
 
 ## Undertaking the analysis
 
-From here we first need to group the data by village using **group_by** then arrange the sessions by date. This ensures that time difference is only calculated between sequential dates. Thereafter we make a new column of the difference between times (`diff`) using the **difftime()** function with the **lag()** function  -- the lag() function ensures the difference is calculated from the value which follows (rather than leads).
+From here we first need to group the data by village using **group_by** then arrange the sessions by date. This ensures that time difference is only calculated between sequential dates. Thereafter we make a new column of the difference between times (`diff`) using the **difftime()** function with the **lag()** function  -- the **lag()** function ensures the difference is calculated from the value which follows (rather than leads).
 
     df <- df %>%
       group_by(village) %>%
       arrange(village, my.timestamp) %>%
       mutate(diff = difftime(my.timestamp, lag(my.timestamp), units="days"))
       
-Which results in the following output. Note that the leadin value for each site is always NA (because there is nothing to subtract its time from):
+Which results in the following output. Note that the leading value for each site is always NA (because there is nothing to subtract its time from):
 
-    village my.timestamp        diff          
+       village my.timestamp        diff          
        <chr>   <dttm>              <drtn>        
      1 Lamaris 2021-01-03 11:51:33        NA days
      2 Lamaris 2021-01-05 13:43:53  2.078015 days
