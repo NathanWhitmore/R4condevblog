@@ -42,7 +42,8 @@ If we imagine the monitoring took place between 0900 and 1700 hours the numbers 
 
 ```r
 # make random number of seconds:
-random.time <- runif(n = my.samples, min = 9 * 60 * 60, max = 17 * 60 * 60)
+random.time <- runif(n = my.samples, min = 9 * 60 * 60, 
+                     max = 17 * 60 * 60)
 ```   
 
 
@@ -72,7 +73,8 @@ From here we first need to group the data by village using **group_by** then arr
 df <- df %>%
    group_by(village) %>%
    arrange(village, my.timestamp) %>%
-   mutate(diff = difftime(my.timestamp, lag(my.timestamp), units="days"))
+   mutate(diff = difftime(my.timestamp, 
+                          lag(my.timestamp), units="days"))
 ```      
 Which results in the following output. Note that the leading value for each site is always NA (because there is nothing to subtract its time from):
 
@@ -95,7 +97,9 @@ A consequence of this when we want to get a summary we need to use **drop_na()**
     df %>%
       group_by(village) %>%
       drop_na(diff) %>%
-      summarise(median = median(diff), min = min(diff), max = max(diff))
+      summarise(median = median(diff), 
+                min = min(diff), 
+                max = max(diff))
 ```
 
 Hey presto ... we get a nice summary!
