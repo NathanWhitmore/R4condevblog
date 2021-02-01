@@ -1,4 +1,4 @@
-# Calculating time lags
+## Calculating time lags
 
 The other day I was asked to calculate the time difference (median, minimum and maximum) between monitoring sessions within study sites for a large data set. Although this might seem daunting, it is a problem that is very easy to handle in the `tidyverse` package.
  
