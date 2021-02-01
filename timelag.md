@@ -23,8 +23,8 @@ Rather than use the **as.Date()** function we can use the **as.POSIXct()** funct
 
 We then turn these into a sequence:
 
-     # use these to make a sequence of days
-     dates <- seq(from = Start, to = End, by = "day")
+    # use these to make a sequence of days
+    dates <- seq(from = Start, to = End, by = "day")
 
 We can then randomly sample those dates:
 
@@ -36,18 +36,21 @@ If we imagine the monitoring took place between 0900 and 1700 hours the numbers 
 
     # make random number of seconds:
     random.time <- runif(n = my.samples, min = 9 * 60 * 60, max = 17 * 60 * 60)
+    
+    We then are able to make a timestamp:
 
-We then are able to make a timestamp:
-     # add the rand.time to the  random.date to make a (random) timestamp
-     my.timestamp <- random.date + random.time
+    # add the rand.time to the  random.date to make a (random) timestamp
+    my.timestamp <- random.date + random.time
 
 We then make a variable containing study site information:
-     # combine to form a simple data frame
-     village <- c(rep("Lamaris", 5), rep("Nugi", 5))
+
+    # combine to form a simple data frame
+    village <- c(rep("Lamaris", 5), rep("Nugi", 5))
 
 And make a data frame from these:
-     # combine to form a simple data frame
-     df <- data.frame(village, my.timestamp)
+
+    # combine to form a simple data frame
+    df <- data.frame(village, my.timestamp)
 
 
     df <- df %>%
@@ -56,8 +59,7 @@ And make a data frame from these:
       mutate(diff = difftime(my.timestamp, lag(my.timestamp), units="days"))
 
 
-
-my.summary <- df %>%
-  group_by(village) %>%
-  drop_na(diff) %>%
-  summarise(median = median(diff), min = min(diff), max = max(diff))
+    my.summary <- df %>%
+      group_by(village) %>%
+      drop_na(diff) %>%
+      summarise(median = median(diff), min = min(diff), max = max(diff))
