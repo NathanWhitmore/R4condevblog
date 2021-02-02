@@ -1,4 +1,4 @@
-### How to install the "condev" package 
+### How to install the `condev` package 
 
 **R for Conservation and Development Projects** uses example data set which are stored on GitHub. These can be easily be directly from R using the following steps:
 
