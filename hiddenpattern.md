@@ -1,7 +1,6 @@
 ## The pattern in the "traps" data
 
-Patterns in binary data can be hard to visualise. There is a very strong pattern hidden in the `traps` data set within the `condev` package. Such pattern can be revealed visually by summarising the data.
-We will need the `tidyverse` and `AICcmodavg` packages in addition to `condev`:
+Patterns in binary data can be hard to visualise. There is a very strong pattern hidden in the `traps` data set within the `condev` package. Let's try to reveal it (or at least an approximate it). We will need the `tidyverse` and `AICcmodavg` packages in addition to `condev`:
 
 ```r
 library("condev")
@@ -14,8 +13,7 @@ Next we will need to load the data:
 data(traps)
 ```
 
-The initial trick is to summarise the data for graphing. However, we shouldn't use this data for the modelling. We can begin by summarising each trap location for purposes of graphing
-trap.
+The initial trick is to summarise the data for graphing. However, we shouldn't use this data for the model selection -- we still want to use our original data. We can begin by summarising each trap location for purposes of graphing.
 
 ```r
 summary <- traps %>%
@@ -28,7 +26,7 @@ Next we should make a binary category based on `traps$trap.catch`:
 traps$caught <- as.factor(traps$trap.catch)
 ```
 
-Now we can make a ggplot looking at bait (Egg or Fish) and trap type (A or B) combinations
+Now we can make a ggplot looking at bait (Egg or Fish) and trap type (A or B) combinations:
 
 ```r
 ggplot()+
