@@ -66,8 +66,8 @@ df %>%
   group_by(village) %>%
   drop_na(diff) %>%
   summarise(median = median(diff), 
-          min = min(diff), 
-          max = max(diff))
+            min = min(diff), 
+            max = max(diff))
 ```
 
 Hey presto ... we get a nice summary!
