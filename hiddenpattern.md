@@ -30,11 +30,12 @@ Now we can make a ggplot looking at bait (Egg or Fish) and trap type (A or B) co
 
 ```r
 ggplot()+
-  geom_bar(data=traps, aes(x=date, fill= caught))+
-  facet_grid(bait.type~trap.type)+
+  geom_bar(data = traps, aes(x = date, fill = caught))+
+  facet_grid(bait.type ~ trap.type)+
   theme_bw()+
-  scale_fill_manual(values=c("grey80","grey10"))+
-  theme(axis.text.x= element_text(size=8, angle =90, vjust=0.5))
+  scale_fill_manual(values = c("grey80", "grey10"))+
+  theme(axis.text.x= element_text(size = 8, 
+        angle = 90, vjust = 0.5))
 ```
 Which results in:
 
@@ -50,23 +51,23 @@ Cand.models <- list( )
 # set out of candidate model target
 
 Cand.models[[1]] <- glm(trap.catch ~ bait.type + trap.type + as.factor(date) + cover,
-                        data = traps, family ="binomial")
+                        data = traps, family = "binomial")
 Cand.models[[2]] <- glm(trap.catch ~ bait.type + trap.type + as.factor(date),
-                        data = traps, family ="binomial")
+                        data = traps, family = "binomial")
 Cand.models[[3]] <- glm(trap.catch ~ trap.type + as.factor(date),
-                        data = traps, family ="binomial")
+                        data = traps, family = "binomial")
 Cand.models[[4]] <- glm(trap.catch ~ bait.type + as.factor(date),
-                        data = traps, family ="binomial")
+                        data = traps, family = "binomial")
 Cand.models[[5]] <- glm(trap.catch ~ bait.type ,
-                        data = traps, family ="binomial")
+                        data = traps, family = "binomial")
 Cand.models[[6]] <- glm(trap.catch ~ trap.type ,
-                        data = traps, family ="binomial")
+                        data = traps, family = "binomial")
 Cand.models[[7]] <- glm(trap.catch ~ bait.type + trap.type,
-                        data = traps, family ="binomial")
+                        data = traps, family = "binomial")
 Cand.models[[8]] <- glm(trap.catch ~ cover,
-                        data = traps, family ="binomial")
+                        data = traps, family = "binomial")
 Cand.models[[9]] <- glm(trap.catch ~ 1 ,
-                        data = traps, family ="binomial")
+                        data = traps, family = "binomial")
 
 
 
