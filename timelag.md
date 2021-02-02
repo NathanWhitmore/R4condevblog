@@ -59,7 +59,7 @@ Which results in the following output. Note that the leading value for each site
  9 Nugi    2021-01-19 09:41:38  2.846603 days
 10 Nugi    2021-01-22 14:25:23  3.197051 days
 ```
- A consequence of this when we want to get a summary we need to use **drop_na()**
+ A consequence of this when we want to get a summary we need to use **drop_na()**:
   
 ```r
 df %>%
@@ -71,3 +71,11 @@ df %>%
 ```
 
 Hey presto ... we get a nice summary!
+
+```
+# A tibble: 2 x 4
+  village median        min           max          
+  <chr>   <drtn>        <drtn>        <drtn>       
+1 Lamaris 4.014844 days 2.078015 days 10.89466 days
+2 Nugi    3.021827 days 1.869662 days 10.13663 days
+```
