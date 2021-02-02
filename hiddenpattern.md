@@ -39,6 +39,8 @@ ggplot()+
 ```
 Which results in:
 
+(https://github.com/NathanWhitmore/R4condevblog/blob/main/assets/images/traps_ggplot_sum.png)
+
 And yeah, there looks to be a pattern with some clear differences between the trap types and bait types.
 Additionally, it looks a like trap catch could be higher in the first half of the year compared to the second half -- but this might just be our imagination.
 
