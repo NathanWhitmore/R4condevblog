@@ -105,3 +105,5 @@ ggplot()+
  ![ggplot2](assets/images/catchprobabilty.png)
  
  Clearly there seems to be a strong seasonal pattern with differences between the bait and trap types.
+ 
+ [BACK to INDEX](index.md)
