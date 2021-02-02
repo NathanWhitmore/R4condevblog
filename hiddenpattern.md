@@ -1,4 +1,4 @@
-## The pattern in the "traps" data
+## The pattern in the `traps` data
 
 There is a very strong pattern hidden in the `traps` data set within the `condev` package. Let's try to reveal it (or at least an approximate it). We will need the `tidyverse` and `AICcmodavg` packages in addition to `condev`:
 
