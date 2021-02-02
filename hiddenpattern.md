@@ -82,7 +82,7 @@ aictab(cand.set = Cand.models, modnames = Modnames, sort = TRUE)
 ```
 
 Now for the sake of brevity I will skip the disgnostics and look at the predictions made by the top model using the **fitted()** function. 
-I've made a copy of the original `traps` data now called `our.model` so that i can attached the predictions without altering the orginal data set:
+I've made a copy of the original `traps` data now called `our.model` so that i can attached the predictions without altering the original data set:
 
 ```r
 our.model <- traps
