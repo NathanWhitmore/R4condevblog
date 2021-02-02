@@ -26,7 +26,6 @@ We then turn these into a sequence:
 
 ```r
 # make random number of seconds:
-random.time <- runif(n = my.samples, min = 9 * 60 * 60, max = 17 * 60 * 60)
 random.time <- runif(n = my.samples, min = 9 * 60 * 60, 
                      max = 17 * 60 * 60)
 ```   
@@ -37,20 +36,36 @@ Rather than use the **as.Date()** function we can use the **as.POSIXct()** funct
 df <- df %>%
   group_by(village) %>%
   arrange(village, my.timestamp) %>%
-  mutate(diff = difftime(my.timestamp, lag(my.timestamp), units="days"))
   mutate(diff = difftime(my.timestamp, 
                          lag(my.timestamp), units="days"))
+                         
+df
 ```      
 Which results in the following output. Note that the leading value for each site is always NA (because there is nothing to subtract its time from):
-  
+
+```
+# A tibble: 10 x 3
+# Groups:   village [2]
+   village my.timestamp        diff          
+   <chr>   <dttm>              <drtn>        
+ 1 Lamaris 2021-01-03 11:51:33        NA days
+ 2 Lamaris 2021-01-05 13:43:53  2.078015 days
+ 3 Lamaris 2021-01-10 15:55:25  5.091331 days
+ 4 Lamaris 2021-01-13 14:26:39  2.938357 days
+ 5 Lamaris 2021-01-24 11:54:58 10.894664 days
+ 6 Nugi    2021-01-04 13:13:28        NA days
+ 7 Nugi    2021-01-06 10:05:47  1.869662 days
+ 8 Nugi    2021-01-16 13:22:32 10.136627 days
+ 9 Nugi    2021-01-19 09:41:38  2.846603 days
+10 Nugi    2021-01-22 14:25:23  3.197051 days
+```
  A consequence of this when we want to get a summary we need to use **drop_na()**
   
 ```r
-  df %>%
+df %>%
   group_by(village) %>%
   drop_na(diff) %>%
-  summarise(median = median(diff), min = min(diff), max = max(diff))
-summarise(median = median(diff), 
+  summarise(median = median(diff), 
           min = min(diff), 
           max = max(diff))
 ```
