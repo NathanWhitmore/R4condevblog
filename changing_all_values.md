@@ -80,7 +80,7 @@ Which results in :
 4 D  cat  cat
 ```
 
-However while changing numbers or text is easy changing NAs back to some value (such as zero) requires using the **is.na()** function as unfortunatley `v2[v2==NA] <- 0` doesn't work as we might expect:
+However while changing numbers or text is straight forward, changing NAs back to some value (such as zero) requires a slightly different approach. Here we have to use the **is.na()** function as unfortunately `v2[v2==NA] <- 0` doesn't work as we might expect:
 
 ```r
 v2[is.na(v2)]  <- 0 
