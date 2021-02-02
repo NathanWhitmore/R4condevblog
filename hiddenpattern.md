@@ -39,8 +39,8 @@ ggplot()+
 ```
 Which results in:
 
-(/assets/images/catchprobabilty.png)
-(https://github.com/NathanWhitmore/R4condevblog/blob/main/assets/images/traps_ggplot_sum.png)
+![ggplot1](assets/images/trapssum.png)
+
 
 And yeah, there looks to be a pattern with some clear differences between the trap types and bait types.
 Additionally, it looks a like trap catch could be higher in the first half of the year compared to the second half -- but this might just be our imagination.
@@ -100,5 +100,8 @@ ggplot()+
   xlab("Date")+
   ylab("Predicted probability of catching moongoose")
  ```
+ Which results in:
+ 
+ ![ggplot2](assets/images/catchprobabilty.png)
  
  Clearly there seems to be a strong seasonal pattern with differences between the bait and trap types.
