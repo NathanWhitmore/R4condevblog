@@ -28,7 +28,7 @@ v1 <- original
 v2 <- original
 ```
 
-For example we could change all 1s to 2s. To do this we use the logical operators (given on page 113). In this example we are says all elements of v1 which equal 1 will be turned to 2:
+For example we could change all 1s to 2s. To do this we use the logical operators (given on page 113). In this example all elements of v1 which equal 1 will be changed to 2:
 
 ```r
 v1[v1==1]  <- 2
@@ -63,7 +63,7 @@ Which results in:
 
 ```
 
-Now let's change all zero values to NA. using the same procedure. In this example we are says all elements of v2 which equal zero will be turned to NAs:
+Now let's change all zero values to NA. using the same procedure. In this example all elements of v2 which equal zero will be turned to NA:
 
 ```r
 v2[v2==0]  <- NA
