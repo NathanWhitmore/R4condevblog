@@ -21,13 +21,12 @@ original
 3 C 0 1
 4 D 1 1
 ```
-WARNING: the following code will make permanent changes to your object. So as a consequence we will make copies based on our orginal data frame (v1, v2, v3)
+WARNING: the following code will make permanent changes to your object. So as a consequence we will make copies based on our orginal data frame (i.e. v1, v2)
 
 ```r
 v1 <- original
 v2 <- original
-v3 <- original
-``
+```
 
 For example we could change all 1s to 2s. To do this we use the logical operators (given on page 113). In this example we are says all elements of v1 which equal 1 will be turned to 2:
 
