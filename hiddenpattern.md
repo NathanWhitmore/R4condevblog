@@ -1,6 +1,6 @@
 ## The pattern in the "traps" data
 
-Patterns in binary data can be hard to visualise. There is a very strong pattern hidden in the `traps` data set within the `condev` package. Let's try to reveal it (or at least an approximate it). We will need the `tidyverse` and `AICcmodavg` packages in addition to `condev`:
+There is a very strong pattern hidden in the `traps` data set within the `condev` package. Let's try to reveal it (or at least an approximate it). We will need the `tidyverse` and `AICcmodavg` packages in addition to `condev`:
 
 ```r
 library("condev")
@@ -13,7 +13,7 @@ Next we will need to load the data:
 data(traps)
 ```
 
-The initial trick is to summarise the data for graphing. However, we shouldn't use this data for the model selection -- we still want to use our original data. We can begin by summarising each trap location for purposes of graphing.
+Patterns in binary data can be hard to visualise, however, underlying patterns are often revealed by graphs using summarised data. However, we shouldn't use this data for model selection -- we still want to use our original data. We begin by summarising the total catch associated with each trap location:
 
 ```r
 summary <- traps %>%
