@@ -39,6 +39,7 @@ ggplot()+
 ```
 Which results in:
 
+(/assets/images/catchprobabilty.png)
 (https://github.com/NathanWhitmore/R4condevblog/blob/main/assets/images/traps_ggplot_sum.png)
 
 And yeah, there looks to be a pattern with some clear differences between the trap types and bait types.
