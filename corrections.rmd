@@ -1,0 +1,8 @@
+# Page 130
+## `str_reaplce_all` verus `str_replace()`
+
+On this page there is an inadevertent error. The code:
+```{r}
+messy %>%
+  mutate(income_before = str_replace_all(income_before, "[$]", ""))
+```
