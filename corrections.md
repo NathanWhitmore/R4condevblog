@@ -1,7 +1,7 @@
 # Page 130
 ## `str_replace_all()` verus `str_replace()`
 
-On this page there is an inadevertent error. The error wasn't picked up because in this particulalr case the code generates the same outcome.
+On this page there is an inadevertent error. The error wasn't picked up because in this particular case the code generates the same outcome.
 
 The book code:
 ```r
@@ -17,3 +17,5 @@ messy %>%
 ```
 
 The difference between `str_replace_all()` and `str_replace()` is that the former replaces all instances, where as the later only replaces the first instance. Generally, you would want to use `str_replace_all()`.
+
+[BACK to INDEX](index.md)
