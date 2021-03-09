@@ -1,4 +1,5 @@
-theme: jekyll-theme-modernist
-
 github:
   is_project_page: false
+
+theme: jekyll-theme-modernist
+
