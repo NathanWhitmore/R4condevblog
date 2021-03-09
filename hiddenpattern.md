@@ -99,7 +99,7 @@ ggplot()+
   geom_smooth(data = our.model, 
               aes(x = as.Date(date), 
                   y = prediction, colour = bait.type,
-                  shape = trap.type), fill =NA) +
+                  shape = trap.type), fill = NA) +
   theme_bw()+
   xlab("Date")+
   ylab("Predicted probability of catching moongoose")
