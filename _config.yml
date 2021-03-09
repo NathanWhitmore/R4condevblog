@@ -1,5 +1,5 @@
-github:
-  is_project_page: false
-
 theme: jekyll-theme-modernist
+
+name: something
+title: null
 
