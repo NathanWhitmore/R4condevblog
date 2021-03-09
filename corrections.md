@@ -1,4 +1,4 @@
-# Page 130
+### Page 130
 ## `str_replace_all()` vesus `str_replace()`
 
 On this page there is an inadevertent error. The error wasn't picked up because in this particular case, the code generates the same outcome.
