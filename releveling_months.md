@@ -7,7 +7,8 @@ have the reference beginning the name of a regular month. While the `tidyverse` 
 Let's make some mock data which emulates this situation. 
 
 ```r
-# a reference which corresponds to the order of the months (but not their name)
+# a reference which corresponds to the order
+# of the months (but not their name)
 reference <- 1:9
 
 # some unimportant data 
@@ -40,8 +41,10 @@ ref_names
 ```   
 Which results in:
 ```r
- [1] "October"   "November"  "December"  "January"   "February"  "March"    
- [7] "April"     "May"       "June"      "July"      "August"    "September"
+ [1] "October"   "November"  "December"  "January"  
+ [5] "February"  "March"     "April"     "May"      
+ [9] "June"      "July"      "August"    "September"
+
 ```      
 
 Now the tricky bit, there are more months in the sequence than there are actual monitoring months. To ensure they match we use the following code, 
@@ -54,8 +57,9 @@ my.months
 
 Which results in:
 ```r
-[1] "October"  "November" "December" "January"  "February" "March"    "April"   
-[8] "May"      "June"  
+[1] "October"  "November" "December" "January" 
+[5] "February" "March"    "April"    "May"     
+[9] "June" 
 ```
 
 Next we change `reference` to a factor. We then use the **levels()** function to ensure the factor levels are those given by `my.month`.
@@ -83,4 +87,5 @@ df
 ```
 
 Hooray!
+
 [BACK to INDEX](index.md)
