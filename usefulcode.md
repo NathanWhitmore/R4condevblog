@@ -8,7 +8,7 @@ This is a directory of examples that will build over time.
 (using base R subsetting with `[]`)
 * [Releveling uniquely numbered months](releveling_months.md)   
 (correctly giving month names to oddly labelled, yet sequential months)
-* [Revealling the hidden pattern in the `traps` data set](hiddenpattern.md)  
+* [Revealing the hidden pattern in the `traps` data set](hiddenpattern.md)  
 (using logistic regression and model selection)
 
 
