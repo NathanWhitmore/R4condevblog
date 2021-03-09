@@ -1,7 +1,7 @@
 ### When months have unique labels
-The other day I was working on a project which labelled months unusually. Month 1 was October, 2 was November etc. Because the analysis involved 
-rasters it was important to keep the numbering system. However when I changed the raster into dataframes it was better for graphing in ggplot to
-have the reference beginning the name of a regular month. While the `tidyverse` is great most of the time for a situation like this it is often easiest to use base R.
+The other day I was working on a project which labelled months unusually: Month 1 was October, 2 was November etc. Because the analysis involved 
+rasters it was important to keep the numbering system. However, when I changed the raster into dataframes it was better for graphing in ggplot to
+have the numbers replaced by the names of the months. While the `tidyverse` is great most of the time for a situation like this it is often easiest to use base R.
 
 ### Making the mock data
 Let's make some mock data which emulates this situation. 
@@ -86,6 +86,6 @@ df
 9      June        i
 ```
 
-Hooray!
+Hooray...it works!
 
 [BACK to INDEX](index.md)
