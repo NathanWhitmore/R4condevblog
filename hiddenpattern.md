@@ -92,12 +92,14 @@ Now we can graph the predictions to understand the pattern being predicted:
 
 ```r
 ggplot()+
-  geom_point(data = our.model, aes(x = as.Date(date), 
-                                   y = prediction, colour = bait.type,
-                                   shape = trap.type), size = 4)+
-  geom_smooth(data = our.model, aes(x = as.Date(date), 
-                                    y = prediction, colour = bait.type,
-                                    shape = trap.type), fill =NA) +
+  geom_point(data = our.model, 
+             aes(x = as.Date(date), 
+                 y = prediction, colour = bait.type,
+                 shape = trap.type), size = 4)+
+  geom_smooth(data = our.model, 
+              aes(x = as.Date(date), 
+                  y = prediction, colour = bait.type,
+                  shape = trap.type), fill =NA) +
   theme_bw()+
   xlab("Date")+
   ylab("Predicted probability of catching moongoose")
