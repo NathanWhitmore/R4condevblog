@@ -8,5 +8,6 @@ This is a directory of examples that will build over time.
 (using base R subsetting with `[]`)
 * [Revealling the hidden pattern in the `traps` data set](hiddenpattern.md)  
 (using logistic regression and model selection)
+* [(releveing_months.md)
 
 [BACK to INDEX](index.md)
