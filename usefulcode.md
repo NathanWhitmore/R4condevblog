@@ -2,6 +2,8 @@
 
 This is a directory of examples that will build over time.
 
+* [How to create an RStudio project](creating_project.md)   
+(to organise your R scripts and data)
 * [How to calculate differences between sequential times within monitoring sites](timelag.md)   
 (i.e. time lags)
 * [How to change values across an entire data frame](changing_all_values.md)  
