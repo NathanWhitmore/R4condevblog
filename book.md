@@ -2,7 +2,7 @@
 
 Realising that there wasn't a good R resource for conservation and development practitioners I wrote **R for Conservation and Development Projects: A Primer for Practitioners** which came out in 2021.
 
-![book cover](https://raw.githubusercontent.com/NathanWhitmore/Reproducible/main/book%20cover.jpg)
+![book cover](https://raw.githubusercontent.com/NathanWhitmore/R4condevblog/main/book%20cover.jpg)
 
 The book is available at all major book distributors (kindle, ebook, paper back, and hardback versions) including:
 
